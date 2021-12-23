@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+html
+{
+    cursor: url("img/cursor.png"), auto;
+	width: 100vw;
+	height: 100vh;
+}
+
+body
+{
+    background: url("img/Christmas-2.jpg");
+	background-repeat: round;
+}
+
+::selection
+{
+    color: white;
+    background: #FF2222;
+}
+
+#card
+{
+    position: absolute; 
+	width: 50ch;
+    height: 80ch;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0.5em red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+#card h1
+{
+	text-align: center;
+	margin-bottom: 64px;
+	margin-top: 10px;
+	font-family: dongle, sans-serif;
+	font-size: 50px;
+	color: red;
+	text-decoration: underline;
+}
+#tree
+{
+	position: absolute;
+	max-width: 50ch;
+	margin-top: -60px;
+	content: "";
+}
+
+#hat
+{
+	position: absolute;
+	max-width: 100px;
+	left: 342px;
+	top: -45px;
+}
+
+#card p
+{
+	font-family: 'mountains of christmas';
+	text-align: center;
+	position: relative;
+}
+
+@media (max-width: 600px)
+{
+	#tree
+	{
+		left: 0px;
+		max-width: 350px;
+	}
+
+	#card
+	{
+		position: absolute;
+		max-width: 350px;
+		max-height: 60ch;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#hat
+	{
+		left: 292px;
+	}
+}
