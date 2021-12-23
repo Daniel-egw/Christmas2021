@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle');
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Vujahday+Script&family=Waterfall');
 
 html
 {
@@ -12,6 +12,7 @@ body
 {
     background: url("img/Christmas-2.jpg");
 	background-repeat: round;
+	background-color: #222;
 }
 
 ::selection
@@ -38,18 +39,13 @@ body
 	text-align: center;
 	margin-bottom: 64px;
 	margin-top: 10px;
-	font-family: dongle, sans-serif;
+	font-family: "dongle", sans-serif;
 	font-size: 50px;
 	color: red;
 	text-decoration: underline;
+	margin-bottom: 0;
 }
-#tree
-{
-	position: absolute;
-	max-width: 50ch;
-	margin-top: -60px;
-	content: "";
-}
+
 
 #hat
 {
@@ -59,21 +55,58 @@ body
 	top: -45px;
 }
 
-#card p
+.pp
 {
-	font-family: 'mountains of christmas';
+	font-family: "Dancing Script";
 	text-align: center;
-	position: relative;
+	margin-bottom: -10px;
+	font-size: 30px;
+	color: #0B0;
+	line-height: 30px;
 }
+
+#pyou
+{
+	letter-spacing: .5ch;
+}
+#pmerry
+{
+	letter-spacing: .4ch;
+}
+#pxmas
+{
+	letter-spacing: .4ch;
+}
+#pandNewYear
+{
+	margin-top: 80px;
+	letter-spacing: .15ch;
+}
+
+#p2021
+{
+	font-family: "Dancing Script";
+	text-align: center;
+	margin-bottom: -10px;
+	font-size: 25px;
+	color: #0B0;
+	line-height: 13px;
+}
+
+.stars
+{
+	font-family: "Dancing Script";
+	font-size: 50px;
+	color: red;
+	z-index: 1000;
+	line-height: 10px;
+	position: absolute;
+}
+
+
 
 @media (max-width: 600px)
 {
-	#tree
-	{
-		left: 0px;
-		max-width: 350px;
-	}
-
 	#card
 	{
 		position: absolute;
@@ -82,10 +115,43 @@ body
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		overflow: hidden;
 	}
 
 	#hat
 	{
 		left: 292px;
+	}
+
+	#card p:not(#p2021)
+	{
+		font-size: 20px;
+	}
+
+	#pi
+	{
+		margin-top: 0px;
+	}
+
+	#p2021
+	{
+		font-size: 15px;
+	}
+
+	#pandNewYear
+	{
+		margin-top: 50px;
+	}
+
+	body
+	{
+		background-repeat: no-repeat;
+		background-color: #222;
+		background-position: -500px;
+	}
+
+	.stars
+	{
+		font-size: 4 v0px;
 	}
 }
