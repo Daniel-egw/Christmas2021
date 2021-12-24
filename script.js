@@ -1,4 +1,5 @@
 let stars = [];
+let bellAudio = new Audio("audio/bell.mp3")
 
 let count = 0;
 while(count <= 9)
@@ -7,7 +8,7 @@ while(count <= 9)
     count++
 }
 
-setInterval(function ()
+setInterval(function()
 {
     for(i = 0; i < stars.length; i++)
     {
@@ -16,6 +17,11 @@ setInterval(function ()
         stars[i].style.top = randomNumber(600) + "px"
     }
 }, 200)
+
+function playAudio()
+{
+    bellAudio.play()
+}
 
 function randomNumber(max)   //random number 
 {
